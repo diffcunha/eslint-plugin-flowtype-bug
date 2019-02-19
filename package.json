@@ -1,0 +1,43 @@
+{
+  "name": "eslint-plugin-flowtype-bug",
+  "version": "0.1.0",
+  "dependencies": {
+    "babel-eslint": "^10.0.0",
+    "eslint": "^5.14.0",
+    "eslint-plugin-flowtype": "^3.4.0"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "plugins": [
+      "flowtype"
+    ],
+    "extends": [
+      "eslint:recommended"
+    ],
+    "env": {
+      "es6": true,
+      "node": true,
+      "browser": true
+    },
+    "globals": {
+      "$Keys": true,
+      "$Values": true,
+      "$ReadOnly": true,
+      "$ReadOnlyArray": true,
+      "$Exact": true,
+      "$Diff": true,
+      "$Rest": true,
+      "$PropertyType": true,
+      "$ElementType": true,
+      "$ObjMap": true,
+      "$TupleMap": true,
+      "$Call": true,
+      "Class": true,
+      "$Supertype": true,
+      "$Subtype": true
+    }
+  }
+}
